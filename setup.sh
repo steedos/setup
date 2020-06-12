@@ -65,8 +65,8 @@ setup_compose() {
     echo "export COMPOSE_FILE=/srv/git/setup/data/docker-compose.yml" >> ~/.profile
     export COMPOSE_PROJECT_NAME=redash
     export COMPOSE_FILE=/srv/git/setup/data/docker-compose.yml
-    docker-compose run --rm server create_db
-    docker-compose up -d
+    sudo docker-compose run --rm server create_db
+    sudo docker-compose up -d
 }
 
 # install_docker
