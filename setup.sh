@@ -61,8 +61,8 @@ setup_compose() {
     # GIT_BRANCH="${REDASH_BRANCH:-master}" # Default branch/version to master if not specified in REDASH_BRANCH env var
     # wget https://raw.githubusercontent.com/getredash/setup/${GIT_BRANCH}/data/docker-compose.yml
     # sed -ri "s/image: redash\/redash:([A-Za-z0-9.-]*)/image: redash\/redash:$LATEST_VERSION/" docker-compose.yml
-    echo "export COMPOSE_PROJECT_NAME=redash" >> ~/.profile
-    echo "export COMPOSE_FILE=/srv/git/setup/data/docker-compose.yml" >> ~/.profile
+    # echo "export COMPOSE_PROJECT_NAME=redash" >> ~/.profile
+    # echo "export COMPOSE_FILE=/srv/git/setup/data/docker-compose.yml" >> ~/.profile
     export COMPOSE_PROJECT_NAME=redash
     export COMPOSE_FILE=/srv/git/setup/data/docker-compose.yml
     docker-compose run --rm server create_db
