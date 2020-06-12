@@ -51,4 +51,9 @@ chmod 755 setup.sh
 ./setup.sh
 ```
 
-> setup.sh 里包括了使用 docker-compose 启动服务, docker-compose.yml 为 ./data/docker-compose.yml
+启动服务：
+
+```bash
+cd data
+docker-compose up -d
+```
