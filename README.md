@@ -29,6 +29,7 @@ You will need to update the `install_docker` function and maybe other functions 
 ```bash
 cd /srv/git
 git clone https://github.com/steedos/setup
+cd setup
 git checkout -t remotes/origin/steedos
 ```
 
