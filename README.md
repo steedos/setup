@@ -38,6 +38,7 @@ wget https://sourceforge.net/projects/pwgen/files/pwgen/2.08/pwgen-2.08.tar.gz
 tar zxvf pwgen-2.08.tar.gz
 cd pwgen-2.08
 ./configure && make && make install
+cd ..
 ```
 
 执行 setup.sh:
