@@ -28,12 +28,8 @@ You will need to update the `install_docker` function and maybe other functions 
 
 ```bash
 cd /srv/git
-git clone https://github.com/steedos/setup
-cd setup
-git checkout -t remotes/origin/steedos
+git clone https://github.com/steedos/setup --branch steedos
 ```
-
-编辑 setup.sh， 注释掉 install_docker 的调用
 
 安装 pwgen：
 
@@ -47,6 +43,7 @@ cd pwgen-2.08
 执行 setup.sh:
 
 ```bash
+cd setup
 chmod 755 setup.sh
 ./setup.sh
 ```
